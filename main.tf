@@ -7,7 +7,6 @@ locals {
 # }
 module "vpc" {
   source                 = "./module/vpc"
-  vpc_cidr        
-         = "10.0.0.0/16"
+  vpc_cidr               = "10.0.0.0/16"
   tag-vpc                = "${local.name}-vpc"
 }
